@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
     RecyclerViewAdapter adapter;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         ArrayList<Mountain> mountains = new ArrayList<>();
         new JsonTask(this).execute(JSON_URL);
         //new JsonFile(this, this).execute(JSON_FILE);
-
 
 
 
